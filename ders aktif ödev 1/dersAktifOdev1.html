@@ -977,8 +977,9 @@ products = [
 
 //fiyatı 30 ile 100 arasında kaç adet ürün var?
 
-    var product1 = products.filter(i => i.unitPrice >= 30 && i.unitPrice <= 100).length
-console.log(product1); 
+    var productt = products.filter(i => i.unitPrice >= 30 && i.unitPrice <= 100).length
+
+    console.log(productt); 
 
 
 //ismi a harfi ile biten ürünler:
@@ -1010,18 +1011,19 @@ console.log("discontinued false olan ürün sayısı: " + count);
 
 //en pahalı ürünün adı:
    
-   var products6 = products.reduce(function(previousMax, current) {
+   var productss = products.reduce(function(previousMax, current) {
         return (current.unitPrice > previousMax.unitPrice ? current : previousMax)
     }, products[0])
     
-console.log(products6.name);
+console.log(productss.name);
 
 //en ucuz ürünün adı:
-    var products7 = products.reduce(function(previousMin, current) {
+    
+    var productsa = products.reduce(function(previousMin, current) {
         return (current.unitPrice < previousMin.unitPrice ? current : previousMin)
     }, products[0])
     
-console.log(products7.name); 
+    console.log(productsa.name); 
 
 
     </script>
